@@ -37,7 +37,8 @@ a {
 }
 
 .actions {
-  gap: 0.8em;
+  font-size: 0.9rem;
+  gap: 0.3em;
   color: #203250;
 }
 
@@ -90,6 +91,9 @@ a {
 @media (min-width: 750px) {
   .search {
     display: block;
+  }
+  .actions {
+    gap: 0.8em;
   }
   .List {
     padding-left: 2em;
