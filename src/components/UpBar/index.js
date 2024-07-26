@@ -23,8 +23,9 @@ const index = () => {
 السلة <FontAwesomeIcon icon={faBasketShopping}  />
 </a>
 </div>
-<div className={Style.search}>
-<input dir="rtl" type="text" className={Style.search__input} placeholder="أبحث باسم أو رقم القطعة..."/>    
+<div className='search'>
+<input dir="rtl" type="text" className='search__input' placeholder="أبحث باسم أو رقم القطعة..."value="" disabled/>    
+
 </div>   
 </div>
 
