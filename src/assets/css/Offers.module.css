@@ -1,0 +1,67 @@
+
+
+
+.OffersBox {
+  position: relative;
+  border: 2px solid #203250;
+  max-height: 30rem; /* تعيين الحد الأقصى للارتفاع */
+  background-color: #203250;
+  border-radius: 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  object-fit: cover; /* تأكد من أن الصور تملأ الحاوية بشكل متناسب */
+  width: 100%;
+}
+
+
+.RightArrow {
+  position: absolute;
+  right: 0;
+  opacity: 0.75;
+  transition: opacity  0.3s ease;  
+  z-index: 100;
+}
+
+
+.LeftArrow {
+  position: absolute;
+  left: 0;
+  opacity: 0.75;
+  transition: opacity  0.3s ease;    
+  z-index: 100;
+
+}
+
+img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; /* تأكد من أن الصور تملأ الحاوية بشكل متناسب */
+}
+
+@media (min-width: 750px) {
+  .LeftArrow,
+  .RightArrow {
+    opacity: 0;
+  }
+  
+  .OffersBox {
+    max-width: 100%;
+  }
+  .OffersBox:hover .RightArrow,.OffersBox:hover .LeftArrow{
+    opacity: 0.75;
+  }
+  .LeftArrow:hover,
+  .RightArrow:hover {
+    filter:opacity(0.6);
+  }
+
+}

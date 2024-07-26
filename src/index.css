@@ -12,6 +12,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: right;
+}
+
+.hl{
+  border-top: 2px solid #002D62 ;
+  width: 11em;
+  margin-left: auto;
+}
+
+.visibility {
+  margin: 0 auto;
+  gap: 10px;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.fillBox {
+  width: 0.93em; /* زيادة الحجم */
+  height: 0.93em;
+  border-radius: 3px; /* زيادة الزاوية المدورة */
+  border: 0.07em solid #002D62;
+  background-color: #002D62;
+  box-shadow: 0px 0px 5px #002D62; /* زيادة الظل ليكون أوضح */
+}
+
+.emptyBox {
+  width: 0.8em; /* زيادة الحجم */
+  height: 0.8em;
+  flex-shrink: 0;
+  border-radius: 3px; /* زيادة الزاوية المدورة */
+  border: 0.07em solid #002D62;
 }
 
 code {
@@ -19,9 +52,16 @@ code {
     monospace;
 }
 
-
+::selection{
+  color: white;
+  background-color: #002D62;
+}
+::-webkit-scrollbar{
+  background-color: gray;
+}
 .row{
   display: flex;
-  color:red
+  justify-content: space-between;
+  align-items: center;
 }
 

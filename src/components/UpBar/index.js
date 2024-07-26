@@ -1,6 +1,6 @@
 import React from "react";
 import logo from './../../assets/images/logo.png'
-import Style from './../../assets/Home.module.css'
+import Style from './../../assets/css/Home.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBasketShopping} from '@fortawesome/free-solid-svg-icons'
 import {faUser} from '@fortawesome/free-regular-svg-icons'

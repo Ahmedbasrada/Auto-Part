@@ -12,6 +12,28 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+header{
+  justify-content: space-around;
+  background-color: lightgray;
+  padding: 2rem 0rem;
+  color:#203250 ;
+}
+.openRow{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.titles--container{
+  margin-top: 0.5em;
+}
+
+.Black-Auto-Part{
+  color: black;
+}
+.container{
+  margin: 0px 4px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +57,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.titlesList li{
+  margin-top: 0.75em;
+}
+
+
+@media (min-width: 750px) {
+  .openRow{
+    flex-direction: row;
+  
+  }
+
+  .titlesList{
+    font-size: 1.3rem;
+    margin-top: 1.7em;
+  }
+
+  .titlesList li{
+    margin-top: 1.3em;
+  }
+  
+
 }

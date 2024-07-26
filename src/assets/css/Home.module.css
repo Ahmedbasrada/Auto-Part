@@ -4,9 +4,10 @@
 }
 
 .container {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
-  background-color: #faf0e6;
+  background-color: lightgray;
   text-align: center;
   padding: 0.5em 0px 0.5em 0px;
   box-shadow: 0px 2px 5px 0px rgba(92, 90, 90, 0.719);
@@ -14,6 +15,7 @@
 
 .vl {
   border-left: 1px solid black;
+  height: 20px;
 }
 
 img {
@@ -68,7 +70,7 @@ a {
 }
 
 .search__input {
-  background-image: url("./../assets/images/search.svg");
+  background-image: url("./../images/search.svg");
   background-repeat: no-repeat;
   font-family: "Rubik";
   border-radius: 15px;
