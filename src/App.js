@@ -27,7 +27,7 @@ function App() {
       </div>
       </div>
       <div className='praicing--img--div'>
-        <img className='praicing--img' src={priacingImage} alt='تسعيرة'/>
+        <img className='praicing--img'width='50px' src={priacingImage} alt='تسعيرة'/>
       </div>
     </div>
     </div>

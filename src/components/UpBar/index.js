@@ -12,7 +12,7 @@ const index = () => {
     return(
         
         <div className={` ${Style.container}`}>
-            <div className="row">
+            <div className={`row ${Style.Bar_row}`}>
         <div className={Style.List}>
             <div className={`row ${Style.actions}`}>
         <a  className={Style.SignIn}>

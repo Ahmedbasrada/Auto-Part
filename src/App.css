@@ -34,14 +34,16 @@ color:#203250 ;
 }
 
 .praicing--img--div{
-  width: 100%;
-  margin-top: 16px;
+  align-self: center;
+  width: 80%;
+  height: 80%;
   max-width: 180px;
 }
-
-.praicing--img{
-  object-fit:cover;
+.praicing--img {
+  width: 100%;
+  height: auto;
 }
+
 .titles--container{
   margin-top: 1em;
   line-height: 1.6; 
@@ -78,6 +80,7 @@ color:#203250 ;
   border-radius: 15px;
   margin: 0 auto;
   width: 100%;
+  max-width: 250px;
   padding: 0.25em;
   cursor: pointer;
 }
@@ -95,7 +98,7 @@ color:#203250 ;
   position: relative;
   top: 0;
   font-size: 1rem;
-  width: 50%;
+  width: 100%;
 }
 .praicing--title{
   font-weight: 400;
@@ -183,17 +186,20 @@ color:#203250 ;
 @media (min-width: 850px) {
   .praicing--latter{
     font-size: 1rem;
+    width: 50%;
   }
   .praicing--btn{
     margin-top: 1em;
   }
 
   .praicing--img--div{
-    margin-top: 0px;}
+    margin-top: 0px;
+
+  }
   .praicing--wideScreenDiv{
     margin-left: auto;
     margin-right: 80px;
-    width: 50%;
+    width: 60%;
   }
   .praicing{
     width: 100%;
