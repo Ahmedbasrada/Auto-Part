@@ -21,7 +21,7 @@ function App() {
       <div className='praicing--row'>
       <div className='praicing--latter'>
       <h1 className='praicing--title'>اطلب تسعيرة الان</h1>
-      <p className='praicing--p'>اطلب تسعيرة مجانية لجيمع قطع<br/> غيارك</p>
+      <p className='praicing--p'>اطلب تسعيرة مجانية لجيمع <br/> قطع غيارك</p>
       <div className='praicing--btn--div'>
       <button className='praicing--btn'>سعر الان</button>
       </div>

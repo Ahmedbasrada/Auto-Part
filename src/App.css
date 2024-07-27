@@ -34,16 +34,13 @@ color:#203250 ;
 }
 
 .praicing--img--div{
-  width: 70%;
+  width: 100%;
   margin-top: 16px;
-  justify-content: flex-end;
-  align-items: flex-end;
-  max-height: 150px;
   max-width: 180px;
 }
 
 .praicing--img{
-  object-fit:fill;
+  object-fit:cover;
 }
 .titles--container{
   margin-top: 1em;
@@ -71,6 +68,7 @@ color:#203250 ;
 
 .praicing--row{
   display: flex;
+  gap: 10px;
   justify-content: space-between;
 }
 .praicing--btn{
