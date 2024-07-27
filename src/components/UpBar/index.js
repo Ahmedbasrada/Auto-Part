@@ -10,15 +10,16 @@ import {faUser} from '@fortawesome/free-regular-svg-icons'
 
 const index = () => {
     return(
-        <div className={`row ${Style.container}`}>
-            
+        
+        <div className={` ${Style.container}`}>
+            <div className="row">
         <div className={Style.List}>
             <div className={`row ${Style.actions}`}>
-        <a href="" className={Style.SignIn}>
+        <a  className={Style.SignIn}>
         <FontAwesomeIcon icon={faUser}  /> تسجيل الدخول
         </a>
         <div className={Style.vl}></div>
-        <a href="" className={Style.basketContainer}>
+        <a  className={Style.basketContainer}>
             <div className={Style.redCircle}>1</div>
 السلة <FontAwesomeIcon icon={faBasketShopping}  />
 </a>
@@ -32,8 +33,13 @@ const index = () => {
 
                
         <div className='logo'>
-        <a href="" ><img  src={logo}/></a>
+        <a href="\" ><img  src={logo}/></a>
         </div>
+        </div>
+        <div className='header--search'>
+<input dir="rtl" type="text" className='search__input' placeholder="أبحث باسم أو رقم القطعة..."value="" disabled/>    
+
+</div>
         </div>
     )
 }

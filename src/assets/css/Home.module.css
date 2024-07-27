@@ -11,6 +11,7 @@
   text-align: center;
   padding: 0.5em 0px 0.5em 0px;
   box-shadow: 0px 2px 5px 0px rgba(92, 90, 90, 0.719);
+  z-index: 100;
 }
 
 .vl {
@@ -74,7 +75,7 @@ a {
   box-shadow: 1px 1px 1px 1px rgba(92, 90, 90, 0.719);
 }
 
-@media (min-width: 750px) {
+@media (min-width: 850px) {
   .search {
     display: block;
   }

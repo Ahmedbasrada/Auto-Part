@@ -5,8 +5,16 @@
 }
 
 
+button , input{
+  font-family: 'Rubik';
+}
+
+:root {
+  color-scheme: dark;
+}
 body {
   margin: 0;
+  background-color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Rubik', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -56,12 +64,12 @@ code {
   color: white;
   background-color: #002D62;
 }
-::-webkit-scrollbar{
-  background-color: gray;
-}
+
 .row{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+a{
+  cursor: pointer;
 }
 

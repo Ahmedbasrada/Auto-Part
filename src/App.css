@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+img{
+  max-width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -18,6 +22,8 @@ header{
 }
 
 .mainHeader{
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
 color:#203250 ;
 }
@@ -27,6 +33,19 @@ color:#203250 ;
 
 }
 
+.praicing--img--div{
+  width: 70%;
+  margin-top: 16px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-height: 200px;
+  max-width: 180px;
+  border: 2px solid red;
+}
+
+.praicing--img{
+  object-fit:fill;
+}
 .titles--container{
   margin-top: 1em;
   line-height: 1.6; 
@@ -36,7 +55,59 @@ color:#203250 ;
   color: black;
 }
 .container{
-  margin: 0px 4px;
+  margin: 0px 3.5%;
+}
+
+.praicing{
+  margin: 3em 0em;
+  font-weight: 100;
+  color: white;
+  margin: 3em auto;
+  background-color: #203250;
+  padding: 0.5em 0.5em;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+.praicing--row{
+  display: flex;
+  justify-content: space-between;
+}
+.praicing--btn{
+  font-size: larger;
+  background-color: #203250;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.25em;
+  cursor: pointer;
+}
+
+
+.praicing--btn:hover{
+  color: #203250;
+  background-color: white;
+}
+.praicing--btn--div{
+  display: flex;
+
+}
+.praicing--latter{
+  position: relative;
+  top: 0;
+  font-size: 1rem;
+  width: 50%;
+}
+.praicing--title{
+  font-weight: 400;
+}
+
+.praicing--p{
+  color: lightgray;
+  opacity: 0.9;
+
 }
 
 .App-header {
@@ -70,6 +141,7 @@ color:#203250 ;
 
 .titlesList{
   margin-top: 2em;
+  margin-right: -1rem;
   
 }
 
@@ -80,13 +152,14 @@ color:#203250 ;
 }
 
 .header--search{
-  margin: 0rem  auto 1.5rem auto;
+  margin: 1.5rem  auto 1.5rem auto;
   display: block;
   width: 90%;
 }
 
 .search__input {
   background-image: url("./assets/images/search.svg");
+  cursor: text;
   background-repeat: no-repeat;
   background-color: white;
   font-family: "Rubik";
@@ -98,12 +171,45 @@ color:#203250 ;
   border: transparent;
 }
 
-@media (min-width: 750px) {
-  .openRow{
+
+
+@media (min-width: 1000px) {
+  .mainHeader{
     flex-direction: row;
+
+  }
   
+}
+
+
+
+@media (min-width: 850px) {
+  .praicing--latter{
+    font-size: 1rem;
+  }
+  .praicing--btn{
+    margin-top: 1em;
   }
 
+  .praicing--img--div{
+    margin-top: 0px;}
+  .praicing--wideScreenDiv{
+    margin-left: auto;
+    margin-right: 80px;
+    width: 50%;
+  }
+  .praicing{
+    width: 100%;
+  }
+
+  .praicing--row{
+    justify-content: space-around;
+
+  }
+  .openRow{
+    flex-direction: row;
+
+  }
   .header--search{
     display: none;
   }

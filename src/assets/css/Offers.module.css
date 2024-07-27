@@ -28,7 +28,7 @@
   right: 0;
   opacity: 0.75;
   transition: opacity  0.3s ease;  
-  z-index: 100;
+  z-index: 10;
 }
 
 
@@ -37,7 +37,7 @@
   left: 0;
   opacity: 0.75;
   transition: opacity  0.3s ease;    
-  z-index: 100;
+  z-index: 10;
 
 }
 
@@ -47,7 +47,7 @@ img {
   object-fit: cover; /* تأكد من أن الصور تملأ الحاوية بشكل متناسب */
 }
 
-@media (min-width: 750px) {
+@media (min-width: 850px) {
   .LeftArrow,
   .RightArrow {
     opacity: 0;
