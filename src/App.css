@@ -106,6 +106,8 @@ color:#203250 ;
 
 .praicing--p{
   color: lightgray;
+  margin-left: auto;
+  max-width: 200px;
   opacity: 0.9;
 
 }
