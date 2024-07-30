@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import Style from './../../assets/css/Reating.module.css'
 import man from './../../assets/images/man.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,7 +7,50 @@ import {faStar} from '@fortawesome/free-solid-svg-icons'
 
 
 
-const index = () =>{
+const Index = () =>{
+
+
+    const people = [
+        {
+            name: 'Ahmed',
+            img: 'me',
+            discreption: 'السلام عليكم'
+        },
+        {
+            name: 'Ali',
+            img: 'AliImage',
+            discreption: 'أنا علي'
+        },
+        {
+            name: 'Saeed',
+            img: 'SaeedImage',
+            discreption: 'أنا علي'
+        },
+    ]
+
+    
+
+    useEffect(() =>{
+        NextComment()
+    },[])
+
+    let Name
+
+    const NextComment = () => {
+        console.log(people.length)
+        for(let i = 0 ; i < people.length ; i++){
+            setTimeout(fo(), 5000);
+            
+        }
+    }
+
+    const fo = () => {
+        console.log('haaaa')
+    }
+
+
+
+
     return(
         <div>
             <h2 className={Style.reatingTitle}>تقييمات</h2>
@@ -66,7 +110,7 @@ const index = () =>{
                          </div>
                 </div>
             <div className={Style.custmerInfo}>
-                <h2 className={Style.custmerName}>اسماء محمد</h2>
+                <h2 className={Style.custmerName}>{Name}</h2>
                 <div className={Style.img}>
                     <img src={man}/>
                 </div>
@@ -130,4 +174,4 @@ const index = () =>{
 
 
 
-export default index
+export default Index

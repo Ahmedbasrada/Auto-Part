@@ -3,7 +3,6 @@ import Style from './../../assets/css/MainHome.module.css'
 import toyota from './../../assets/images/toyota.png'
 import camry_lamp from './../../assets/images/camry_lamp.png'
 import smallToyota from './../../assets/images/smallToyota.png'
-import { Directions } from "@material-ui/icons";
 
 
 

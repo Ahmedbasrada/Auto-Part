@@ -121,6 +121,7 @@ color:#203250 ;
   color: black;
 }
 .container{
+  overflow: hidden;
   margin: 0px 3.5%;
 }
 
