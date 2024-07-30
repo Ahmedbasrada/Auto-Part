@@ -1,30 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import Style from './../../assets/css/Reating.module.css'
 import man from './../../assets/images/man.png'
+import boy from './../../assets/images/boy.png'
+import boy2 from './../../assets/images/boy2.png'
+
+import girl from './../../assets/images/girl.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faStar} from '@fortawesome/free-solid-svg-icons'
 
 
 
 const Index = () =>{
+const [ReatingFirst , setReatingFirst] = useState({
 
+    name:'اسماء محمد',
+    commient: 'سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.' ,
+    img: girl
+
+})
+
+const [ReatingMain , setReatingMain] = useState({
+
+    name:'علي محمد',
+    commient: 'سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.' ,
+    img: boy
+
+})
+
+
+const [ReatingLast , setReatingLast] = useState({
+   
+    name:'أحمد محسن',
+    commient: 'سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.' ,
+    img: man
+})
 
     const people = [
         {
-            name: 'Ahmed',
-            img: 'me',
-            discreption: 'السلام عليكم'
+            name: 'أحمد محسن',
+            img: man,
+            discreption: 'سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.'
         },
         {
-            name: 'Ali',
-            img: 'AliImage',
-            discreption: 'أنا علي'
+            name: 'علي محمد',
+            img: boy,
+            discreption: 'سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.'
         },
         {
-            name: 'Saeed',
-            img: 'SaeedImage',
-            discreption: 'أنا علي'
+            name: 'اسماء محمد',
+            img: girl,
+            discreption: 'سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.'
+        },
+
+        {
+            name: 'ادم خالد',
+            img: boy2,
+            discreption: 'سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.'
         },
     ]
 
@@ -34,18 +67,50 @@ const Index = () =>{
         NextComment()
     },[])
 
-    let Name
 
-    const NextComment = () => {
+    const NextComment = async() => {
         console.log(people.length)
-        for(let i = 0 ; i < people.length ; i++){
-            setTimeout(fo(), 5000);
-            
-        }
-    }
+        let y = 1
+        let x = 2
+        let i = 3
+        setInterval(() => {
+                
+            if(i >= people.length ){
+                i = 0
+            }
+            if(x >= people.length ){
+                x = 0
+            }
+            if(y >= people.length){
+                y = 0
+            }
+               console.log(x)
+               setReatingLast({
+                name:people[y].name,
+                commient: people[y].discreption,
+                img: people[y].img
+            })
 
-    const fo = () => {
-        console.log('haaaa')
+
+                setReatingFirst({
+                    name:people[i].name,
+                    commient: people[i].discreption,
+                    img: people[i].img
+                })
+                
+
+                 console.log('X: ' + x)
+                console.log('I: ' + i)
+                setReatingMain({
+                    name:people[x].name,
+                    commient: people[x].discreption,
+                    img: people[x].img
+                })
+                 
+                i++
+                x++
+                y++
+            }, 8000)
     }
 
 
@@ -53,7 +118,7 @@ const Index = () =>{
 
     return(
         <div>
-            <h2 className={Style.reatingTitle}>تقييمات</h2>
+            <h1 className={Style.reatingTitle}>تقييمات</h1>
             <div className={Style.AllReating}>
 
 
@@ -75,13 +140,12 @@ const Index = () =>{
                          </div>
                 </div>
             <div className={Style.custmerInfo}>
-                <h2 className={Style.custmerName}>اسماء محمد</h2>
+                <h2 className={Style.custmerName}>{ReatingLast.name}</h2>
                 <div className={Style.smallImg}>
-                    <img src={man}/>
+                    <img src={ReatingLast.img}/>
                 </div>
                 </div>
-                <p dir="rtl">سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.
-        
+                <p dir="rtl">{ReatingLast.commient}
                 </p>
                 <div className={`row ${Style.stars}`}>
                 <FontAwesomeIcon size="1x" icon={faStar} style={{color: "#fff700",}} />
@@ -110,12 +174,12 @@ const Index = () =>{
                          </div>
                 </div>
             <div className={Style.custmerInfo}>
-                <h2 className={Style.custmerName}>{Name}</h2>
+                <h2 className={Style.custmerName}>{ReatingMain.name}</h2>
                 <div className={Style.img}>
-                    <img src={man}/>
+                    <img src={ReatingMain.img}/>
                 </div>
                 </div>
-                <p dir="rtl">سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.
+                <p dir="rtl">{ReatingMain.commient}
         
                 </p>
                 <div className={`row ${Style.stars}`}>
@@ -144,12 +208,12 @@ const Index = () =>{
                          </div>
                 </div>
             <div className={Style.custmerInfo}>
-                <h2 className={Style.custmerName}>اسماء محمد</h2>
+                <h2 className={Style.custmerName}>{ReatingFirst.name}</h2>
                 <div className={Style.smallImg}>
-                    <img src={man}/>
+                    <img src={ReatingFirst.img}/>
                 </div>
                 </div>
-                <p dir="rtl">سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة سنساعدك خطوه بخطوه من البداية إلى النهاية, من قبل خبراء لمساعدتك على الوصول إلى القمة.
+                <p dir="rtl"> {ReatingFirst.commient}
         
                 </p>
                 <div className={`row ${Style.stars}`}>

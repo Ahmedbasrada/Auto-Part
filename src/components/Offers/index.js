@@ -55,8 +55,8 @@ const Index = () => {
           }
           console.log(window.innerWidth)
     },[window.innerWidth])
-  
 
+    console.log('pigBage: ' + bigPage)
     return (
         <div>
             <div className={Style.OffersBox}>

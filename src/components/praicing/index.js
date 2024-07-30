@@ -2,7 +2,6 @@ import React from 'react'
 import priacingImage from './../../assets/images/carspare.png'
 
 
-
 const index = () => {
     return(
         <div className='praicing'>
