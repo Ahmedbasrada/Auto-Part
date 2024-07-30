@@ -49,6 +49,7 @@
 }
  
 .div h3{
+    font-size: 0.75rem;
     margin-bottom: 0px;
     padding-bottom: 15px;
 }
@@ -62,6 +63,10 @@
 
 @media (min-width: 850px) {
     
+    
+.div h3{
+    font-size: 1rem;
+}
 .container li {
     font-size: 1rem;
     margin-bottom:15px ;
