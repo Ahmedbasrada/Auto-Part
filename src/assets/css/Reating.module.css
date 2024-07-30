@@ -1,7 +1,4 @@
-h2, p{
-    color: white;
 
-}
 
 .reatingTitle{
     color: #002D62;
@@ -46,15 +43,15 @@ h2, p{
     position: relative;
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     min-height: 300px;
-    padding: 40px;
-    min-width: 550px;
+    padding: 30px;
+    width: 600px;
     border-radius: 20px;
     margin: 50px;
     background-color: #002D62;
     border: 2px solid #002D62;
     box-shadow: 0px 0px 8px #002D62;
-
 }
 
 
@@ -63,23 +60,51 @@ h2, p{
     position: relative;
     display: flex;
     flex-direction: column;
-    min-height: 300px;
-    padding: 40px;
-    min-width: 550px;
+    font-size: 0.75rem;
+    padding: 10px;
+    align-self: flex-end;
+    min-height: 210px;
+    width: 400px;
     border-radius: 20px;
     color: #002D62;
+   border-radius: 20px;
     margin: 50px;
     background-color: white;
     border: 2px solid  rgb(233, 230, 230);
     box-shadow: 0px 0px 8px black;
     opacity: 0.75;
+
 }
 
+
+
+
+.ReatingDiv .moaiin{
+    width: 60px;
+    height: 60px;
+    background-color: #002D62;
+    position: absolute;
+    top: -35px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+    overflow:hidden;
+    box-shadow: 0px 0px 8px black;
+
+}
+
+
+.ReatingDiv .quote{
+    position: relative;
+    left: -10px;
+    top: 5px;
+    width: 35px;
+     height: 35px;
+     fill: white
+    
+}
 .AllReating{
-    overflow-x: scroll;
-    padding-top: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 
@@ -87,10 +112,6 @@ h2, p{
     display: none; /* لإخفاء شريط التمرير في المتصفحات التي تدعم WebKit */
   }
 
-.ReatingDiv h2 , p {
-    color: #002D62;
-
-}
 
 .custmerInfo{
     display: flex;
@@ -107,14 +128,39 @@ h2, p{
     background-color: white;
 }
 
+
+.smallImg{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+
+.smallImg img {
+    width: 10px;
+    object-fit: cover;
+}
+
 .img img {
     width: 20px;
     object-fit: cover;
 }
 
 .stars{
-    position: relative;
-    top: 50px;
+    display: flex;
     justify-content: flex-end;
-    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.ReatingDivMain h2, .ReatingDivMain  p{
+    color: white;
+}
+
+.ReatingDiv h2 , .ReatingDiv p {
+    color: #002D62;
+
+}
+
+
+.ReatingDiv p {
 }
