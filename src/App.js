@@ -3,7 +3,10 @@ import React from 'react';
 import UpBar from "./components/UpBar" 
 import Offers from './components/Offers'
 import Titles from './components/titles'
-import priacingImage from './assets/images/carspare.png'
+import Praicing from './components/praicing'
+import MainHome from './components/mainHome'
+import Reating from './components/Reating'
+
 
 function App() {
   return (
@@ -16,22 +19,9 @@ function App() {
    </div>
    </header>
    <div className='container'>
-    <div className='praicing'>
-      <div className='praicing--wideScreenDiv'>
-      <div className='praicing--row'>
-      <div className='praicing--latter'>
-      <h1 className='praicing--title'>اطلب تسعيرة الان</h1>
-      <p className='praicing--p'>اطلب تسعيرة مجانية لجيمع قطع غيارك</p>
-      <div className='praicing--btn--div'>
-      <button className='praicing--btn'>سعر الان</button>
-      </div>
-      </div>
-      <div className='praicing--img--div'>
-        <img className='praicing--img'width='50px' src={priacingImage} alt='تسعيرة'/>
-      </div>
-    </div>
-    </div>
-    </div>
+    <Praicing/>
+    <MainHome/>
+    <Reating/>
    </div>
     </>
   );

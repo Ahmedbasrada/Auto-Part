@@ -1,0 +1,120 @@
+h2, p{
+    color: white;
+
+}
+
+.reatingTitle{
+    color: #002D62;
+    margin-bottom: 100px ;
+    text-align: center;
+}
+
+.moaiin{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: -43px;
+    border-radius: 15px;
+    transform: rotate(45deg);
+    overflow:hidden;
+    box-shadow: 0px 0px 8px black;
+
+}
+
+.morbah{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+  
+    bottom: 80px;
+}
+
+.quote{
+    position: relative;
+    left: -13px;
+    top: 5px;
+    width: 50px;
+     height: 50px;
+     fill: #002D62
+    
+}
+
+
+.ReatingDivMain{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 40px;
+    min-width: 550px;
+    border-radius: 20px;
+    margin: 50px;
+    background-color: #002D62;
+    border: 2px solid #002D62;
+    box-shadow: 0px 0px 8px #002D62;
+
+}
+
+
+
+.ReatingDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    padding: 40px;
+    min-width: 550px;
+    border-radius: 20px;
+    color: #002D62;
+    margin: 50px;
+    background-color: white;
+    border: 2px solid  rgb(233, 230, 230);
+    box-shadow: 0px 0px 8px black;
+    opacity: 0.75;
+}
+
+.AllReating{
+    overflow-x: scroll;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.AllReating::-webkit-scrollbar {
+    display: none; /* لإخفاء شريط التمرير في المتصفحات التي تدعم WebKit */
+  }
+
+.ReatingDiv h2 , p {
+    color: #002D62;
+
+}
+
+.custmerInfo{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+::selection{
+    background-color: white;
+    color: #002D62;
+}
+.img{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+}
+
+.img img {
+    width: 20px;
+    object-fit: cover;
+}
+
+.stars{
+    position: relative;
+    top: 50px;
+    justify-content: flex-end;
+    align-self: flex-end;
+}

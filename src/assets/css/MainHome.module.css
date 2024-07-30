@@ -1,0 +1,195 @@
+
+
+h1,h2,h3,h4,h5,h6,p,a{
+    font-weight: 400;
+}
+
+h2{
+    color: #002D62;
+}
+
+
+h3{
+    font-size: large;
+    text-align: center;
+
+}
+
+.gap{
+    display: flex;
+    align-self: center;
+    gap: 15px;
+}
+
+
+
+.card{
+    min-height: 400px;
+    min-width: 250px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    gap: 30px;
+    background-color: white;
+    padding: 10px;
+}
+
+.ProdectsCards{
+    background-color: rgb(233, 230, 230);
+    display: flex;
+    min-height: 450px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+
+.genuen{
+    width: 70px;
+    height: 70px;
+    padding-right: 10px;
+    background-color: #002D62;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    font-size: large;
+    left: -11px;
+    top: -11px;
+    color: white;
+}
+
+.noneGenuine{
+    width: 70px;
+    height: 70px;
+    padding-right: 10px;
+    background-color: #623500;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    font-size: large;
+    left: -11px;
+    top: -11px;
+    color: white;
+}
+.ProdectsArrowsContainer{
+    display: none;
+    gap: 15px;
+}
+
+.showMore{
+    align-items: flex-end;
+    margin-bottom: 8px;
+    cursor: pointer;
+    fill: #002D62;
+}
+.hover{
+    margin-bottom: 0px;
+}
+
+.showMore:hover  .hover{
+    filter: brightness(150%);
+}
+.ProdectsArrows{
+    border: 1px solid#002D62;
+    box-shadow: 0px 0px 5px #002D62;
+    display: flex;
+    align-self: flex-end;
+    border-radius: 5px;
+    padding: 5px;
+    fill: #002D62;
+}
+
+.AutoPartType{
+    justify-content: space-between;
+}
+
+
+.ProdectsArrows:hover{
+    border: 1px solid #002D62;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #002D62;
+    background-color: #002D62;
+    display: flex;
+    border-radius: 5px;
+    padding: 5px;
+    fill: white;
+}
+
+
+.cardImageDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(233, 230, 230);
+    border-radius: 10%;
+    min-height: 220px;
+}
+
+.prodectsImage{
+    object-fit: cover;
+
+}
+.ProdectsName{
+    margin-bottom: -0.5em;
+}
+.AutoType{
+    margin-left: auto;
+}
+
+.praice{
+    text-align: right;
+    margin-top: 0px;
+    justify-self: flex-start;
+    margin-bottom: 3px;
+}
+
+
+.praiceDis{
+    text-align: right;
+    color: rgb(177, 175, 175);
+    text-decoration: line-through;
+    margin: 0;
+}
+
+
+p{
+    color: rgb(177, 175, 175);
+}
+
+.lefty{
+    width: 30px;
+    min-height: 30px;
+    align-self: flex-end;
+}
+
+.bottomCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smallLogo{
+    max-width: 70px;
+}
+
+.righty{
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.topCard{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 850px) {
+    
+.ProdectsArrowsContainer{
+    display: flex;
+}
+}
