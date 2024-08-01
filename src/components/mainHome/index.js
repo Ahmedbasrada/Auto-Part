@@ -2,6 +2,11 @@ import React from "react";
 import Style from './../../assets/css/MainHome.module.css'
 import logo from './../../assets/images/logo.png'
 import toyota from './../../assets/images/toyota.png'
+import hyoanday from './../../assets/images/hyoanday.png'
+import kia from './../../assets/images/kia.png'
+import mitso from './../../assets/images/mitso.png'
+import chaver from './../../assets/images/chaver.png'
+import gmc from './../../assets/images/gmc.png'
 import camry_lamp from './../../assets/images/camry_lamp.png'
 import smallToyota from './../../assets/images/smallToyota.png'
 import tros from './../../assets/images/tros.png'
@@ -31,10 +36,10 @@ const index = () =>{
         <div className={Style.container}>
             <h1>اختر الشركة</h1>
             <div className="hl"></div>
-           <div className="row cards" dir="rtl">
+           <div className="row cards centerFlex" dir="rtl">
             <div>
             <div className="companiesCardLogo" >
-                <img className="companiesCardLogo--img" src={toyota} alt={`شعار شركة تويوتا`}/>
+                <img className="companiesCardLogo--img" style={{  top: '15px' }} src={toyota} alt={`شعار شركة تويوتا`}/>
 
            </div>
            <h3>تويوتا</h3>
@@ -44,59 +49,53 @@ const index = () =>{
 
            <div>
             <div className="companiesCardLogo" >
-                <img className="companiesCardLogo--img" src={toyota} alt={`شعار شركة تويوتا`}/>
+                <img className="companiesCardLogo--img" src={hyoanday} alt={`شعار شركة تويوتا`}/>
 
            </div>
-           <h3>تويوتا</h3>
-
-           </div>
-
-           <div>
-            <div className="companiesCardLogo" >
-                <img className="companiesCardLogo--img" src={toyota} alt={`شعار شركة تويوتا`}/>
-
-           </div>
-           <h3>تويوتا</h3>
+           <h3>هونداي</h3>
 
            </div>
 
            <div>
             <div className="companiesCardLogo" >
-                <img className="companiesCardLogo--img" src={toyota} alt={`شعار شركة تويوتا`}/>
+                <img className="companiesCardLogo--img"  src={kia} alt={`شعار شركة تويوتا`}/>
 
            </div>
-           <h3>تويوتا</h3>
+           <h3>كيا</h3>
+
+           </div>
+
+           <div>
+            <div className="companiesCardLogo" style={{  minWidth: '150px' }}>
+              <div style={{  width: '130px',display:'flex', height: '80px' }}>
+                <img className="companiesCardLogo--img" style={{  width: '100%' , objectFit: 'fill' , left: '-5px' , top: '15px'}}  src={mitso} alt={`شعار شركة تويوتا`}/>
+                </div>
+           </div>
+           <h3>ميتسوبيشي</h3>
 
            </div>
            
 
            <div>
             <div className="companiesCardLogo" >
-                <img className="companiesCardLogo--img" src={toyota} alt={`شعار شركة تويوتا`}/>
+                <img className="companiesCardLogo--img" src={chaver} alt={`شعار شركة تويوتا`}/>
 
            </div>
-           <h3>تويوتا</h3>
+           <h3>شفروليه</h3>
 
            </div>
 
            <div>
             <div className="companiesCardLogo" >
-                <img className="companiesCardLogo--img" src={toyota} alt={`شعار شركة تويوتا`}/>
+                <img className="companiesCardLogo--img" src={gmc} alt={`شعار شركة تويوتا`}/>
 
            </div>
-           <h3>تويوتا</h3>
+           <h3>جيمس</h3>
 
            </div>
 
 
-           <div>
-            <div className="companiesCardLogo" >
-                <img className="companiesCardLogo--img" src={toyota} alt={`شعار شركة تويوتا`}/>
-
-           </div>
-           <h3>تويوتا</h3>
-
-           </div>
+           
            
            </div>
 

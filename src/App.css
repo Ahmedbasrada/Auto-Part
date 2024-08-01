@@ -16,28 +16,29 @@
 .cards::-webkit-scrollbar {
   display: none; /* لإخفاء شريط التمرير في المتصفحات التي تدعم WebKit */
 }
-.companiesCardLogo{
+.companiesCardLogo {
   cursor: pointer;
-  width: 150px;
   min-height: 150px;
   border-radius: 100%;
   margin: 16px;
   border: 2px solid #203250;
   display: flex;
   align-self: flex-end;
-  padding: 1px;
+  padding: 3px;
   box-shadow: 0px 0px 8px #002D62; /* زيادة الظل ليكون أوضح */
 }
-.companiesCardLogo--img{
-  align-self: flex-end;
+
+.centerFlex{
+  justify-content: flex-start;
+}
+
+.companiesCardLogo--img {
+  position: relative;
+  align-self: center;
+  width: 150px; 
+  height: auto;
 }
  
- 
- 
- svg {
-  width: 20px;
-  height: 20px;
- }
  
  
  /*Button*/
@@ -288,6 +289,11 @@ max-width: 550px;
     font-size: 1rem;
     width: 50%;
   }
+
+  
+.centerFlex{
+  justify-content: center;
+}
   .praicing--btn{
     margin-top: 1em;
   }

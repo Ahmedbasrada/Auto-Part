@@ -19,13 +19,13 @@
   display: flex;
   transition: transform 1s ease-in-out;
   object-fit: cover; /* تأكد من أن الصور تملأ الحاوية بشكل متناسب */
-  width: 100%;
 }
 
 
 .RightArrow {
   position: absolute;
   right: 0;
+  width: 50px;
   opacity: 0.75;
   transition: opacity  0.3s ease;  
   z-index: 10;
